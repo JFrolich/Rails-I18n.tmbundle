@@ -2,16 +2,32 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>deleted</key>
+	<array>
+		<string>D3F10AC0-D9D8-4733-859F-EE81DF064E58</string>
+	</array>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>25EB4E7C-CCB0-4025-A6F2-A0986C85E325</string>
+			<string>A354FF61-CCD9-4ED8-B280-C7EEF4388202</string>
+			<string>------------------------------------</string>
+			<string>914BB49A-6809-425F-812E-7C3C5321D403</string>
+			<string>7DAF30C3-0247-4E94-AA44-DD2E69A6E236</string>
+			<string>BED4BD7F-306B-45DD-AB3D-357937A88834</string>
+		</array>
+		<key>submenus</key>
+		<dict/>
+	</dict>
 	<key>name</key>
-	<string>Rails i18n</string>
+	<string>Rails I18n</string>
 	<key>ordering</key>
 	<array>
-		<string>46A50FB1-0B6D-43BE-81AA-A1CE1B8C605B</string>
-		<string>2B12C17A-23C7-4C3C-94A9-72AB35A40704</string>
-		<string>A47E697C-4CB7-4B3B-A908-CD27EC996826</string>
-		<string>B6ECCCD3-1A5C-4FDE-91CB-C156F27A8CE2</string>
+		<string>914BB49A-6809-425F-812E-7C3C5321D403</string>
+		<string>7DAF30C3-0247-4E94-AA44-DD2E69A6E236</string>
 	</array>
 	<key>uuid</key>
-	<string>EC798126-F527-4D70-A8BA-317A7E735489</string>
+	<string>F217218F-CCD3-45C0-8D67-DB761EA9CE61</string>
 </dict>
 </plist>
