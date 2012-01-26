@@ -34,7 +34,7 @@ class AddTranslation
   
   # Ask the user for the token they want to use for this key
   def get_token_key
-    @token_key = TextMate.input("Text Key (by default uses controller.view.{your key})", '')
+    @token_key = TextMate.input("Text Key (by default uses controller.view.{your key})", ENV['TM_SELECTED_TEXT'].downcase.gsub(" ", "_").gsub("/", "_").gsub("&", "and").gsub(/\'|\"|\(|\)|\.|\,|/,""))
 
     if !@token_key
       print @selected_text
@@ -80,14 +80,14 @@ class AddTranslation
         last_section = last_section[part]
       end
     end
-
-    if last_section[last_part][final_key]
-      TextMate.message("The token #{final_key} is already in use, please choose another")
-      TextMate.exit_discard
-      return
-    else
+    
+    # if last_section[last_part][final_key]
+    #   TextMate.message("The token #{final_key} is already in use, please choose another")
+    #   TextMate.exit_discard
+    #   return
+    # else
       last_section[last_part][final_key] = @selected_text
-    end
+    # end
 
     # Dump into the english locale
     File.open($default_locale_file, 'w') do |f|
